@@ -29,7 +29,7 @@ const Doctors = () => {
     return (
         <section className="doctors my-5 mt-5">
             <div className="container">
-                <div className="text-primary text-center">
+                <div className="text-brand text-center">
                     <h6 className="mb-5">Our Doctors</h6>
                 </div>
                 <div className="row">

@@ -9,7 +9,7 @@ const Doctor = (props) => {
             <p className="font-weight-bold">{name}</p>
             <div className="d-flex align-items-center justify-content-center">
                 <div>
-                    <FontAwesomeIcon className="icon  text-primary mb-3" icon={icon}></FontAwesomeIcon>
+                    <FontAwesomeIcon className="icon  text-brand mb-3" icon={icon}></FontAwesomeIcon>
                 </div>
                 <div>
                     <p className=" pl-1">{description}</p>

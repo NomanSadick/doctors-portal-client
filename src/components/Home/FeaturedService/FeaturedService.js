@@ -12,7 +12,7 @@ const FeaturedService = () => {
                     <div className="col-md-7 my-5 align-self-center">
                         <h2>Exceptional Dantal <br />Care, on Your Terms</h2>
                         <p className="text-secondary mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia repudiandae delectus, ducimus mollitia reiciendis numquam quaerat architecto obcaecati ipsum eaque sit amet consectetur adipisicing elit. Officia repudiandae delectus, ducimus mollitia reiciendis numquam quaerat architecto obcaecati ipsum eaque.</p>
-                        <button className="btn btn-primary mt-5">I LEARN MORE</button>
+                        <button className="btn btn-brand mt-5">I LEARN MORE</button>
                     </div>
                 </div>
 

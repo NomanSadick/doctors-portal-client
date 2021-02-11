@@ -1,4 +1,5 @@
 import React from 'react';
+import './Appointment.css'
 import { useState } from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
@@ -11,7 +12,7 @@ const Appointment = () => {
         setSlectedDate(date)
     }
     return (
-        <div>
+        <div className="header-container">
             <Navbar></Navbar>
             <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
             <BookAppointment date={selectedDate}></BookAppointment>
