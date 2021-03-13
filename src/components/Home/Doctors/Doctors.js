@@ -1,31 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import doctor from '../../../images/doctor.png'
 import Doctor from '../Doctor/Doctor';
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
-const doctorsData = [
-    {
-        name: 'Dr. Caudi',
-        image: doctor,
-        description: '+15697854124',
-        icon: faPhone,
-        
-    },
-    {
-        name: 'Dr. Caudi',
-        image: doctor,
-        description: '+15697854124',
-        icon: faPhone
-    },
-    {
-        name: 'Dr. Caudi',
-        image: doctor,
-        description: '+15697854124',
-        icon: faPhone
-    },
 
-]
 
 const Doctors = () => {
+    const [doctors, setDoctors] = useState([])
+    useEffect( () => {
+        fetch('http://localhost:5000/doctors')
+        .then(res => res.json())
+        .then(data => setDoctors(data))
+    }, [])
     return (
         <section className="doctors my-5 mt-5">
             <div className="container">
@@ -34,7 +19,7 @@ const Doctors = () => {
                 </div>
                 <div className="row">
                     {
-                        doctorsData.map(doctor => <Doctor doctor={doctor}></Doctor>)
+                        doctors.map(doctor => <Doctor key={doctor._id} doctor={doctor}></Doctor>)
                     }
                 </div>
             </div>

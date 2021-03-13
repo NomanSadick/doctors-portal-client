@@ -5,7 +5,7 @@
     height:790px;
     position:relative;
 }
-.header-container::after{
+/* .header-container::after{
     height:790px;
     content:' ';
     position: absolute;
@@ -14,4 +14,4 @@
     right: 0;
     background-color: #3A4256;
     z-index: -50;
-}
+} */

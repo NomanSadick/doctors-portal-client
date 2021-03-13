@@ -6,9 +6,11 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="header-container">
-            <Navbar></Navbar>
+           <div className="container-fluid">
+           <Navbar></Navbar>
             <HeaderMain></HeaderMain>
             <BusinessInfo></BusinessInfo>
+           </div>
         </div>
     );
 };
