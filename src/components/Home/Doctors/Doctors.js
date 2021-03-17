@@ -7,7 +7,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 const Doctors = () => {
     const [doctors, setDoctors] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/doctors')
+        fetch('https://shielded-cove-63328.herokuapp.com/doctors')
         .then(res => res.json())
         .then(data => setDoctors(data))
     }, [])

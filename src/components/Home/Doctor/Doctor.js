@@ -10,7 +10,7 @@ const Doctor = ({ doctor }) => {
                     <img style={{ height: '200px' }} src={`data:image/jpeg;base64,${doctor.image.img}`}/>
 
                     :
-                    <img style={{ height: '200px' }} className="img-fluid mb-3 pt-5" src={`http://localhost:5000/${doctor.img}`} alt="" />
+                    <img style={{ height: '200px' }} className="img-fluid mb-3 pt-5" src={`https://shielded-cove-63328.herokuapp.com/${doctor.img}`} alt="" />
             }
             <p className="font-weight-bold">{doctor.name}</p>
             <div className="d-flex align-items-center justify-content-center">
