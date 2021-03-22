@@ -23,7 +23,7 @@ const Dashboard = () => {
         fetch('https://shielded-cove-63328.herokuapp.com/appointmenstByDate', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ date: selectedDate, email:loggedInUser.email })
+            body: JSON.stringify({ date: selectedDate, email: loggedInUser.email })
         })
             .then(res => res.json())
             .then(data => setAppointments(data))
@@ -31,9 +31,9 @@ const Dashboard = () => {
     return (
         <section>
             <div style={containerStyle} className="row container-fluid">
-               
-                    <Sidebar></Sidebar>
-           
+
+                <Sidebar></Sidebar>
+
                 <div className="col-md-5 col-sm-12 col-12 mt-5">
                     <Calendar
                         onChange={handleDateChange}
