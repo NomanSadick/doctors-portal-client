@@ -31,12 +31,13 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
                     </Link>
                 </li>
-                <li>
-                    <Link to="/appointment" className="text-white">
-                        <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
-                    </Link>
-                </li>
+
                 {isDoctor && <div>
+                    <li>
+                        <Link to="/allPatients" className="text-white">
+                            <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
+                        </Link>
+                    </li>
 
                     <li>
                         <Link to="/allPatients" className="text-white">

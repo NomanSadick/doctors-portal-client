@@ -50,7 +50,7 @@ const BookAppointment = ({date}) => {
     return (
         <section className="mt-5 py-5">
             <h2 className="text-center text-brand mt-5">Available Appointment {date.toDateString()}</h2>
-            <div className="row">
+            <div className="row container d-flex justify-content-center m-auto">
                 {
                     bookingData.map(booking => <BookingInfo booking={booking} date={date} key={booking.id}></BookingInfo>)
                 }
